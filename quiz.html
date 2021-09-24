@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="up">
+            <span>
+                Which fruit do I like?
+            </span>
+        </div>
+        <div class="down">
+            <div class="answer ">
+                <span onclick="change(),red(),redred(),redredd()"><p>Ⓐ</p> Apple.</span>
+            </div>
+            <div class="answer bb">
+                <span onclick="red(), change()"><p>Ⓑ</p>Strawberry.</span>
+            </div>
+            <div class="answer cc">
+                <span onclick="redred(), change()"><p>Ⓒ</p>Watermelon.</span>
+            </div>
+            <div class="answer dd">
+                <span onclick="redredd(), change()"><p>Ⓓ</p> Peach.</span>
+            </div>
+        </div>
+    </section>
+    <script>
+        function change(){
+            document.querySelector('.answer span').style.cssText = 'background-color: #80e180; color: white'; 
+        }
+
+        function red(){
+            document.querySelector('.bb span').style.cssText = 'background-color: #ff3451; color: white'; 
+        }
+
+        function redred(){
+            document.querySelector('.cc span').style.cssText = 'background-color: #ff3451; color: white'; 
+        }
+
+        function redredd(){
+            document.querySelector('.dd span').style.cssText = 'background-color: #ff3451; color: white'; 
+        }
+
+
+        
+        
+    </script>
+
+
+</body>
+</html>
